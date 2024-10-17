@@ -12,6 +12,7 @@ const convertUTCToTimezone = (time, timeZone, returnAsDate = false) => {
     const toDate = new Date(time).toLocaleString("en-US", {timeZone: timeZone});
 
     const convertedTime = dayjs.utc(time).tz(timeZone);
+    test
     // Get the offset in minutes (positive if ahead of UTC, negative if behind)
     // console.log('toDate', convertedTime);
 
@@ -36,6 +37,8 @@ const convertUTCToTimezone = (time, timeZone, returnAsDate = false) => {
 
   // Return the formatted time as string
 };
+
+//test
 const time = "Thu Oct 17 2024 01:00:00 GMT+0530 (India Standard Time)";
 
 
