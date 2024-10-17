@@ -5,8 +5,11 @@ const timezone = require("dayjs/plugin/timezone");
 dayjs.extend(utc);
 dayjs.extend(timezone);
 
+
+
 const timezone1 = "Africa/Algiers";
 const timezone2 = "Africa/Addis_Ababa";
+const timezone3 = "Asia/Calcutta"
 const convertUTCToTimezone = (time, timeZone, returnAsDate = false) => {
   const format = convertedTime1.format();
     const toDate = new Date(time).toLocaleString("en-US", {timeZone: timeZone});
