@@ -8,18 +8,16 @@ dayjs.extend(timezone);
 const timezone1 = "Africa/Algiers";
 const timezone2 = "Africa/Addis_Ababa";
 const convertUTCToTimezone = (time, timeZone, returnAsDate = false) => {
-  const convertedTime1 = dayjs(time).tz(timeZone);
   const format = convertedTime1.format();
     const toDate = new Date(time).toLocaleString("en-US", {timeZone: timeZone});
 
     const convertedTime = dayjs.utc(time).tz(timeZone);
     // Get the offset in minutes (positive if ahead of UTC, negative if behind)
-    console.log('toDate', convertedTime);
+    // console.log('toDate', convertedTime);
 
   const convertWithOffset = dayjs(time).utcOffset(330);
 
 
-  return convertedTime1.format();
 //   console.log("convertedTime", convertedTime1);
 //   console.log("convertWithOffset", convertWithOffset);
 //   console.log("format", format);
@@ -38,15 +36,19 @@ const convertUTCToTimezone = (time, timeZone, returnAsDate = false) => {
 
   // Return the formatted time as string
 };
-
-const time = "2024-09-27T12:00:00.655-05:30";
-const time1 = "2024-09-27T12:00:00.655Z";
+const time = "Thu Oct 17 2024 01:00:00 GMT+0530 (India Standard Time)";
 
 
+const convertedTime1 = () =>  dayjs(time).utc();
+console.log('test', convertedTime1());
+
+// const time1 = "2024-09-27T12:00:00.655Z";
 
 
+
+// ------------------offset-------------------
 var offset = (new Date()).getTimezoneOffset();
-console.log(offset); // -330
+// console.log(offset); // -330
 
 
  const convertUTCToTimezoneDateSelect = (time, timeZone) => {
@@ -56,7 +58,7 @@ console.log(offset); // -330
 
  const _utcObject = new Date(new Date(time).getTime() - offset - offsetTo)
 
- console.log(_utcObject.toISOString() )
+//  console.log(_utcObject.toISOString() )
 }
 
 
