@@ -65,7 +65,6 @@ var offset = (new Date()).getTimezoneOffset();
 
  const _utcObject = new Date(new Date(time).getTime() - offset - offsetTo)
 
-//  console.log(_utcObject.toISOString() )
 }
 
 
