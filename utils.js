@@ -27,5 +27,5 @@ const timezone3 = 'Africa/Algiers'
 console.log(convertUTCToTimezone(time, timezone1))
 console.log(convertUTCToTimezone(time, timezone2))
 console.log(convertUTCToTimezone(time, timezone2, true))
-console.log(convertUTCToTimezone(time, timezone3))
+// console.log(convertUTCToTimezone(time, timezone3))
 
