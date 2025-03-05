@@ -18,6 +18,7 @@ const targetTimezone = 'Africa/Algiers'; // Desired timezone
 
 const convertedTime = convertUTCToTimezone(utcTime, targetTimezone);
 console.log(convertedTime);
+console.log('test')
 
 
 
