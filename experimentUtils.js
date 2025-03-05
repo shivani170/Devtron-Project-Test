@@ -17,6 +17,7 @@ const convertUTCToTimezone = (time, timeZone, returnAsDate = false) => {
     // console.log('toDate', convertedTime);
 
   const convertWithOffset = dayjs(time).utcOffset(330);
+    const convertWithOffset = dayjs(time).utcOffset(330);
 
 
 //   console.log("convertedTime", convertedTime1);
